@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Escreva seu CSS Aqui 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    Para os tamanhos, verifique as instruções.
+    HINT: Lembre-se você não consegue alterar as propriedades das linhas de um GRID.
+    Mas as linhas de um Grid são transparentes!
+    */
+
+    .branco{
+        background-color: #F0F1EC;
+    }
+
+    .vermelho{
+        background-color: #E72F24;
+    }
+
+    .preto{
+        background-color: #232629;
+    }
+
+    .azul{
+        background-color: #004592;
+    }
+
+    .amarelo{
+        background-color: #F9D01E;
+    }
+
+    body{
+        background-color: antiquewhite;
+    }
+    #quadro{
+        height: 748px;
+        width: 748px;
+        background-color: #000;
+        display: grid;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 155px 20px;
+        gap: 9px;
+    }
+
+    #vermelho{
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    #branco1{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    #branco2{
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
+
+    #branco3{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    #azul{
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 4;
+        grid-column-end: 4;
+        margin-bottom: 10px;
+    }
+
+    #branco4{
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    #amarelo{
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+
+    #amarelo{
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+
+    #branco5{
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 4;
+        grid-column-end: 4;
+    }
+
+    #preto{
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 3;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="quadro">
+    <div id="vermelho" class="vermelho"></div>
+    <div id="branco1" class="branco"></div>
+    <div id="branco2" class="branco"></div>
+    <div id="branco3" class="branco"></div>
+    <div id="azul" class="azul"></div>
+    <div id="branco4" class="branco"></div>
+    <div id="amarelo" class="amarelo"></div>
+    <div id="branco5" class="branco"></div>
+    <div id="preto" class="preto"></div>
+  </div>
+</body>
+
+</html>
